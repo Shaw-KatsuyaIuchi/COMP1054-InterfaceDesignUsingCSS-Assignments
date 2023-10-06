@@ -1,0 +1,93 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    font-family: 'Dela Gothic One', cursive; /* Styling font for header */
+    background-color: #333; /* Styling background-color for header */
+    color: #fff;  /* Styling font-color for header */
+    text-align: center; /* Making h1 in center horizontally */
+    position: fixed; /* fixing header at top */
+    height: 5vh; /* Styling heater height */
+    width: 100%; /* Styling header width */
+}
+
+h1 {
+    padding-top: 10px; /* Making h1 in center vertically */
+}
+
+main {
+    padding: 6vh; /* Prevents header from overlapping with the body content */
+    text-align: center; /* Making h1 in center horizontally */
+    background-color: darkkhaki; /* Styling background color for main body */
+}
+
+footer {
+    text-align: right; /* Placing footer text on the right side */
+}
+
+p {
+    color: black; /* Styling font color for all sentence in main body */
+    font-family: 'Pixelify Sans', cursive; /* Styling for all sentences in main */
+}
+
+.one {
+    height: 32vh;
+    width: 100%;
+    background-image: url(../picture/background-one.webp); /* Adding a background image for the 'class-one' element */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    padding-top: 30px; /* Adding padding for content spacing */
+}
+
+.two {
+    height: 32vh;
+    width: 100%;
+    background-image: url(../picture/charmander-ed-sheeran3.webp); /* Adding a background image for the 'class-two' element */
+    background-repeat: no-repeat;
+    background-size: 35%;
+    background-position: right; /* Position background image to the right */
+    padding-top: 40px;
+}
+
+.three {
+    height: 25vh;
+    width: 100%;
+    background-image: url(../picture/Ed-Sheeran-Pokemon-song\(2\).avif); /* Adding a background image for the 'class-three' element */
+    background-repeat: no-repeat;
+    background-size: 38%;
+    padding-top: 50px;
+}
+
+.four {
+    font-style: italic; /* To make character for italic */
+    font-weight: bold; /* To make character for bold */
+    height: 32vh;
+    width: 100%;
+    background-image: url(../picture/poke-pviv9x2krx8z6wn8hfis2yowojijil4tsb9yajvqdg.jpg); /* Adding a background image for the 'class-four' element */
+    background-repeat: no-repeat;
+    background-size: 35%;
+    background-position: right;
+    padding-top: 80px;
+}
+
+.anotherFont {
+    font-family: 'Raleway', sans-serif; /* Overwrite font style for this class */
+}
+
+.yellow {
+    color: rgb(255, 255, 0); /* Overwrite font color for this class */
+}
+
+.pinkish {
+    color: pink; /* Overwrite font color for this class */
+}
+
+/* This is for hiding all images at a specific screen size */
+@media (max-width: 1000px) {
+    .one, .two, .three, .four {
+        background-image: none; /* Remove background images */
+    }
+}
