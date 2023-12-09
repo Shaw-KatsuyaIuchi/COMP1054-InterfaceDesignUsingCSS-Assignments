@@ -1,0 +1,107 @@
+/*
+Main Styles
+*/
+body {
+  background-color: #e6e2d7; /* Set the background color for the entire page */
+  color: black;
+  line-height: 1.8;
+  font-size: 1.3rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.pagination a:hover {
+  color: rgba(3, 92, 7, 0.8); /* Darken the background color on hover for pagination links */
+}
+
+img {
+  max-width: 100%; /* Ensure images are responsive and don't overflow their containers */
+}
+
+li {
+  list-style: none; /* Remove default list styling */
+}
+
+p {
+  font-family: 'Kalnia', serif; /* Apply a custom font family for paragraphs */
+}
+
+.page-title {
+  font-family: 'Rubik Bubbles', sans-serif; /* Apply a custom font family for page titles */
+}
+
+/*
+Common Class for Setting Content Width
+*/
+.wrapper {
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 40px; /* Add padding to the sides of the wrapper */
+}
+
+.content {
+  padding-top: 120px;
+  padding-bottom: 160px;
+}
+
+.site-title a {
+  width: 180px;
+  line-height: 1px;
+  display: block;
+}
+
+.page-title {
+  font-size: 0.875rem;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+/*
+PRODUCTS Section
+*/
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product-list li {
+  width: 23%;
+  margin-bottom: 40px;
+}
+
+.product-list img {
+  margin-bottom: 10px;
+  vertical-align: top; /* Eliminate space below images */
+}
+
+.product-list p {
+  font-size: 0.75rem;
+}
+
+.link-text {
+  display: block;
+  text-align: center;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination li {
+  padding: 0 20px;
+}
+
+/*
+Responsive Design for Small Screens (900px and below)
+*/
+@media screen and (max-width: 900px) {
+  .product-list li {
+    width: 47%; /* Adjust product list item width for smaller screens */
+  }
+}

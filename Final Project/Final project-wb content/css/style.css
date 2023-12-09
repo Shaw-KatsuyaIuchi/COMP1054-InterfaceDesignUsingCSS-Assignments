@@ -1,0 +1,293 @@
+/* Reset and Typography */
+html {
+  font-size: 100%; /* Reset font size to default */
+}
+
+body {
+  /* Body styling */
+  background-color: #e6e2d7; /* Set background color */
+  color: #121212; /* Set text color */
+  font-size: 0.9rem; /* Set base font size */
+  line-height: 1.7; /* Set line height */
+}
+
+a {
+  /* Link styling */
+  color: #121212; /* Set link color */
+  text-decoration: none; /* Remove link underline */
+}
+
+img {
+  /* Responsive image styling */
+  max-width: 100%; /* Ensure images don't exceed their container */
+}
+
+li {
+  /* Remove default list styling */
+  list-style: none;
+}
+
+p {
+  font-family: 'Kalnia', serif; /* Set custom font for paragraphs */
+}
+
+/* Section Title */
+.sec-title {
+  /* Styling for section titles */
+  font-size: 2.25rem; /* Set font size for section titles */
+  margin-bottom: 30px; /* Add space below section titles */
+  text-align: center; /* Center-align section titles */
+  font-family: 'Rubik Bubbles', sans-serif; /* Set custom font for section titles */
+}
+
+/* Background */
+#bc {
+  height: 100vh; /* Set background height to full viewport height */
+}
+
+#bc-img {
+  /* Background image styling */
+  width: 100%;
+  height: 100vh;
+  object-fit: cover; /* Ensure the background image covers the container */
+}
+
+/* Online Store */
+.onlinestore {
+  /* Styling for an online store section */
+  background: #e6e2d7; /* Set background color for online store section */
+  padding: 8px; /* Add padding to the online store section */
+  position: absolute; /* Set the position to absolute */
+  left: 40px; /* Position from the left */
+  bottom: 30px; /* Position from the bottom */
+}
+
+.onlinestore a {
+  /* Styling for online store links */
+  display: block; /* Display links as block elements */
+  border: solid 1px black; /* Add border to links */
+  padding: 30px 18px; /* Add padding to links */
+  font-family: 'Kalnia', serif; /* Set custom font for links */
+}
+
+.onlinestore a:hover {
+  /* Hover effect for online store links */
+  opacity: 0.7; /* Reduce opacity on hover */
+}
+
+/* Feature Section */
+#feature {
+  /* Styling for feature section */
+  max-width: 1240px; /* Set maximum width for the feature section */
+  padding: 100px 16px 50px 16px; /* Add padding to the feature section */
+  margin: -50px auto 10px auto; /* Set margins for the feature section */
+}
+
+#feature .grid {
+  /* Grid layout for feature section */
+  display: grid;
+  gap: 26px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid columns */
+}
+
+#feature .grid .item {
+  /* Styling for feature section items */
+  transition: all 0.3s ease; /* Add smooth transition effects */
+  box-shadow: 0 0 8px 4px #ccc; /* Add box shadow to items */
+}
+
+#feature .grid img {
+  /* Styling for images in the feature section */
+  vertical-align: top;
+}
+
+#feature .grid .item-content {
+  /* Styling for content in feature section items */
+  padding: 30px; /* Add padding to item content */
+}
+
+#feature .grid .item-cat,
+#feature .grid .item-text,
+#feature .grid .item-date {
+  /* Styling for category, text, and date in feature section items */
+  font-size: 0.75rem; /* Set font size for category, text, and date */
+  margin-bottom: 20px; /* Add space below category, text, and date */
+}
+
+/* Pick Up Section */
+#pickup {
+  width: 100%; /* Set width to 100% */
+  padding: 50px 0; /* Add padding to the pick-up section */
+}
+
+.slick-area {
+  /* Styling for the pick-up section carousel */
+  display: flex; /* Use flexbox for layout */
+  transition: transform 0.5s ease; /* Add smooth transition to carousel */
+}
+
+.slick-area li {
+  /* Styling for items in the pick-up section carousel */
+  flex: 0 0 auto;
+  width: 20vw; /* Set width for carousel items */
+  scroll-snap-align: start; /* Snap items to the start of the container */
+}
+
+.slick-area li img {
+  /* Styling for images in the pick-up section carousel */
+  width: 100%; /* Set image width to 100% */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 80%; /* Set maximum width for images */
+}
+
+/* Products Section */
+.wrapper {
+  /* Styling for a wrapper in the products section */
+  width: 100%; /* Set width to 100% */
+  max-width: 1024px; /* Set maximum width for the wrapper */
+  margin: 0 auto; /* Center the wrapper */
+  padding: 0 20px; /* Add padding to the wrapper */
+}
+
+.products {
+  /* Styling for the products section */
+  display: flex; /* Use flexbox for layout */
+  margin-top: 100px; /* Add margin space at the top */
+  margin-bottom: 180px; /* Add margin space at the bottom */
+}
+
+.products .ver-title {
+  /* Styling for vertical titles in the products section */
+  font-size: 2rem; /* Set font size for vertical titles */
+  letter-spacing: 0.1em; /* Add letter spacing to vertical titles */
+  margin-bottom: 18px; /* Add space below vertical titles */
+}
+
+.products .ver-title .sub-title {
+  /* Styling for sub-titles in the products section */
+  font-size: 0.875rem; /* Set font size for sub-titles */
+  font-family: 'Kalnia', serif; /* Set custom font for sub-titles */
+}
+
+.products .img {
+  /* Styling for images in the products section */
+  width: 65%; /* Set width for images */
+  margin-top: 100px; /* Add margin space at the top */
+  position: relative; /* Set position to relative for absolute positioning */
+}
+
+.products .text {
+  /* Styling for text in the products section */
+  width: 56%; /* Set width for text */
+  color: #fff; /* Set text color to white */
+  padding: 50px 0; /* Add padding to text */
+  text-align: center; /* Center-align text */
+  position: absolute; /* Set position to absolute */
+  bottom: -20px; /* Set position from the bottom */
+  font-family: 'Kalnia', serif; /* Set custom font for text */
+}
+
+/* Products 1 */
+#about-us {
+  /* Styling for the 'About Us' section */
+  flex-direction: row-reverse; /* Reverse flex direction for responsiveness */
+}
+
+#about-us .ver-title {
+  /* Styling for vertical titles in the 'About Us' section */
+  margin-left: 20px; /* Add margin to the left */
+  writing-mode: vertical-lr; /* Set vertical writing mode */
+}
+
+#about-us .text {
+  /* Styling for text in the 'About Us' section */
+  background: rgba(133, 3, 94, 0.6); /* Set background color with transparency */
+  left: -20px; /* Set position from the left */
+}
+
+#about-us .text:hover {
+  background: rgba(133, 3, 94, 0.8); /* Darken the background color on hover */
+  transform: scale(1.1); /* Enlarge the text on hover */
+}
+
+/* Products 2 */
+#store .ver-title {
+  /* Styling for vertical titles in the 'Store' section */
+  margin-right: 20px; /* Add margin to the right */
+  writing-mode: vertical-rl; /* Set vertical writing mode */
+}
+
+#store .text {
+  /* Styling for text in the 'Store' section */
+  background: rgba(3, 92, 7, 0.6); /* Set background color with transparency */
+  right: -20px; /* Set position from the right */
+}
+
+#store .text:hover {
+  background: rgba(3, 92, 7, 0.8); /* Darken the background color on hover */
+  transform: scale(1.1); /* Enlarge the text on hover */
+}
+
+/* Map Section */
+#map iframe {
+  /* Styling for iframes in the map section */
+  width: 100%; /* Set width to 100% */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  /* Responsive styling for smaller screens */
+  #bc-img {
+    display: none; /* Hide background image on smaller screens */
+  }
+  
+  #bc {
+    /* Change background for smaller screens */
+    background-image: url(../img/wagashi_bc_sp.jpeg);
+    padding: 20px;
+    margin-bottom: 70px;
+    background-size: cover;
+    background-position: center 12px;
+  }
+  
+  .onlinestore {
+    left: 20px;
+    bottom: 20px;
+  }
+
+  .onlinestore a {
+    /* Responsive styling for online store links */
+    display: block;
+    border: solid 1px #ccc;
+    padding: 10px 8px;
+  }
+
+  .products .img {
+    /* Responsive styling for images in the products section */
+    width: 90%;
+    margin-top: 70px;
+  }
+
+  .products .text {
+    /* Responsive styling for text in the products section */
+    width: 65%;
+    font-size: 1rem;
+    padding: 40px 0;
+  }
+
+  #contact .content {
+    /* Responsive styling for the contact section content */
+    flex-direction: column;
+  }
+
+  #contact .contact-info,
+  #contact .contact-form {
+    /* Responsive styling for contact section info and form */
+    width: 100%;
+  }
+
+  #contact .contact-form .button input {
+    /* Responsive styling for contact form buttons */
+    width: 100%;
+  }
+}

@@ -1,0 +1,178 @@
+/* Global Styles */
+html {
+  font-size: 100%;
+}
+
+body {
+  font-size: 0.9rem;
+  line-height: 2;
+  background-color: #e6e2d7;
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  padding-bottom: 30px;
+  font-family: 'Kalnia', serif; /* Custom font for list items */
+}
+
+/* Applying a drop shadow effect using filter: drop-shadow */
+.section-title {
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 4.5rem;
+  filter: drop-shadow(1px 1px 10px #c0c0c0); /* Adding a subtle drop shadow */
+  position: absolute;
+  top: 30%;
+  font-family: 'Rubik Bubbles', sans-serif; /* Custom font for section title */
+}
+
+/* Styling the item title with an underline effect */
+.item-title {
+  font-size: 2.5rem;
+  display: inline-block;
+  border-bottom: solid 6px rgba(133, 3, 94, 0.8); /* Underline effect with custom color */
+  margin-bottom: 70px;
+  font-family: 'Rubik Bubbles', sans-serif; /* Custom font for item title */
+}
+
+/* Adding a fixed background with background-attachment: fixed */
+.fixed-bg {
+  height: 280px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Setting a common width for content and centering it */
+.wrapper {
+  max-width: 1000px;
+  padding: 90px 16px 150px 16px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Section 1 Styles */
+#sec1 .sec1-img {
+  background-image: url(../img/aboutus_bc1.jpg);
+  position: relative;
+}
+
+/* Section 2 Styles */
+#sec2 .sec2-img {
+  background-image: url(../img/aboutus_bc2.jpg);
+  position: relative;
+}
+
+/* Styling for buttons with hover effects */
+.btn {
+  width: 160px;
+  height: 50px;
+  line-height: 3.5;
+  display: inline-block;
+  color: #000;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.btn span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.btn::before,
+.btn::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: rgba(3, 92, 7, 0.8); /* Dark background for button hover effect */
+  transition: all 0.3s ease;
+}
+
+.btn span::before,
+.btn span::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: rgba(3, 92, 7, 0.8); /* Dark background for button hover effect */
+  transition: all 0.3s ease;
+}
+
+.btn::before,
+.btn span::before {
+  width: 2px;
+  height: 50%;
+}
+
+.btn::after,
+.btn span::after {
+  width: 20%;
+  height: 2px;
+}
+
+.btn:hover::before,
+.btn span:hover::before {
+  height: 100%;
+}
+
+.btn:hover::after,
+.btn span:hover::after {
+  width: 100%;
+}
+
+/* Responsive Styles for Small Screens (Mobile) */
+@media screen and (max-width: 767px) {
+  .site-title {
+    top: 42%;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    top: 26%;
+  }
+
+  .item-title {
+    font-size: 1.25rem;
+    margin-bottom: 25px;
+  }
+
+  .fixed-bg {
+    height: 94px;
+    background-attachment: scroll; /* Background scrolls on mobile devices */
+  }
+
+  .wrapper {
+    padding: 30px 16px 60px 16px;
+  }
+
+  /* Section 1 Responsive Styles */
+  #sec1 .menu-content {
+    flex-direction: column;
+  }
+
+  #sec1 .fixed-bg {
+    height: 144px;
+  }
+
+  #sec1 .section-title {
+    top: 50%;
+  }
+
+  /* Section 2 Responsive Styles */
+  #sec2 ul {
+    flex-direction: column;
+  }
+
+  #sec2 li {
+    width: 100%;
+  }
+}
